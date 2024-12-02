@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inglish-App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/paginaboostrap.css">
+    <link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css";
+    rel="stylesheet"
+integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+    crossorigin="anonymous">
+  </head>
+  
+
+  <!--================================-->
+<!--ENCABEZADO-->
+<!--================================-->
+<style>
+  .bg-dark-custom {
+      background-color: black;
+  }
+</style>
+
+<header class="container-fluid bg-dark-custom
+d-flex justify-content-center">
+
+<img src="./img/LOGOTIPO PAGINA INGLES.png" alt="Txtciber" width="550" height="300">
+</header>
+
+<div class="navbar">
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  <ul class="menu">
+    <li><a href="Index.html">English-App</a></li>
+    <li><a href="intro.html">About us</a></li>
+    <li><a href="Ubicacion.html">location</a></li>
+    <li><a href="servicios.html">Exercises</a></li>
+    <li><a href="Contactanos.html">Contact us!</a></li>
+  </ul>
+</div>
+<!--================================-->
+<!--Formulario-bg-->
+<!--================================-->
+
+    <!--================================-->
+    <!--Formulario-->
+    <!--================================-->
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de reseñas y opiniones</title>
+</head>
+<body>
+  
+    <title>Present Simple 'Be' Positive</title>
+    <style>
+
+.formulario1 {
+    width: 35%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+   
+        .exercise {
+            margin: 20px 0;
+        }
+        .exercise input {
+            width: 100px;
+            padding: 5px;
+            margin-right: 10px;
+        }
+        .exercise button {
+            padding: 5px 10px;
+            margin-right: 10px;
+        }
+        .exercise .result {
+            display: inline-block;
+            margin-left: 10px;
+            font-size: 20px;
+            color: red;
+        }
+        .exercise .correct-answer {
+            display: none;
+            color: green;
+        }
+        .exercise .show-answer {
+            color: blue;
+            cursor: pointer;
+            display: none;
+        }
+    </style>
+
+<br>
+<center>
+<h3>
+    The "as...as" structure in English is used to make comparisons of equality. It indicates that two things or people have the same amount, quality, or characteristic.')</h3>
+</center>
+<section class="container-fluid">
+    <div class="row w-75 mx-auto servicio-fila">
+
+        <div class="col-lg-6 col-md-6 col-sm-12 d-flex  my-5 icono-wrap ">
+         
+            <div>
+                <h3 class="fs-7 mt-4 px-4 pb-1">Positive</h3>
+                <p class="px-4">Structure: Subject + verb + as + adjective/adverb + as + noun/pronoun.
+                    	</p>
+            </div>
+        </div>
+
+    <div class="colcol-lg-6 col-md-6 col-sm-12 d-flex  my-5 icono-wrap">
+
+        <div>
+            <h3 class="fs-7 mt-4 px-4 pb-1">Example:</h3>
+            <p class="px-4">"She is as tall as her brother."
+               </p>
+        </div>
+    </div>
+
+    <center>
+        <h3>Next, here's the negative. You only add 'not'.</h3>
+        </center>
+
+    </div>
+    <div class="row w-75 mx-auto servicio-fila">
+        <div class="col-lg-6 col-md-6 col-sm-12 d-flex  my-5 icono-wrap">
+          
+            <div>
+                <h3 class="fs-7 mt-4 px-4 pb-1">Negative</h3>
+                <p class="px-4">Structure: Subject + verb + not as/so + adjective/adverb + as + noun/pronoun.
+                    	 </p>
+            </div>
+        </div>
+
+    <div class="colcol-lg-6 col-md-6 col-sm-12 d-flex  my-5 icono-wrap">
+       
+        <div>
+            <h3 class="fs-7 mt-4 px-4 pb-1">Example:</h3>
+            <p class="px-4">	"She is not as tall as her brother."
+             </p>
+        </div>
+    </div>
+    </div>
+</section>
+
+
+
+
+
+
+    <div class="formulario1">
+    <h2>Comparing with 'As...As'</h2>
+    <p>Complete the sentence using the "as...as" structure.</p>
+
+    <div class="exercise" id="exercise1">
+        <p> 1) She is <input type="text" id="input1"></p> tall <input type="text" id="input1"> her brother.</p>
+        <button onclick="checkAnswer('input1', 'as', 'result1')">CHECK</button><button onclick="showAnswer('answer1')">SHOW</button>
+        <span id="result1" class="result"></span>
+        <span id="answer1" class="correct-answer">[ as..as ]</span>
+    </div>
+
+    <div class="exercise" id="exercise2">
+        <p>2) This movie is not <input type="text" id="input2"></p> interesting <input type="text" id="input2"> the book.</p>
+        <button onclick="checkAnswer('input2', 'as', 'result2')">CHECK</button><button onclick="showAnswer('answer2')">SHOW</button>
+        <span id="result2" class="result"></span>
+        <span id="answer2" class="correct-answer">[ as..as ]</span>
+    </div>
+
+    <div class="exercise" id="exercise3">
+        <p>3) He runs <input type="text" id="input3"></p> fast <input type="text" id="input3"> a cheetah.</p>
+        <button onclick="checkAnswer('input3', 'as', 'result3')">CHECK</button><button onclick="showAnswer('answer3')">SHOW</button>
+        <span id="result3" class="result"></span>
+        <span id="answer3" class="correct-answer">[ as..as ]</span>
+    </div>
+
+    <div class="exercise" id="exercise4">
+        <p>4) I can’t play the piano <input type="text" id="input4"></p> well <input type="text" id="input4"> she can.</p> 
+        <button onclick="checkAnswer('input4', 'as', 'result4')">CHECK</button><button onclick="showAnswer('answer4')">SHOW</button>
+        <span id="result4" class="result"></span>
+        <span id="answer4" class="correct-answer">[ as..as ]</span>
+    </div>
+
+    <div class="exercise" id="exercise5">
+        <p>5) This task is <input type="text" id="input5"></p> difficult <input type="text" id="input5"> the last one.</p>
+        <button onclick="checkAnswer('input5', 'as', 'result5')">CHECK</button><button onclick="showAnswer('answer5')">SHOW</button>
+        <span id="result5" class="result"></span>
+        <span id="answer5" class="correct-answer">[ as..as ]</span>
+    </div>
+
+    <div class="exercise" id="exercise6">
+        <p>6) The cake didn’t taste <input type="text" id="input6"></p> good <input type="text" id="input6"> I expect.</p>
+        <button onclick="checkAnswer('input6', 'as', 'result6')">CHECK</button><button onclick="showAnswer('answer6')">SHOW</button>
+        <span id="result6" class="result"></span>
+        <span id="answer6" class="correct-answer">[ as..as ]</span>
+    </div>
+
+    <div class="exercise" id="exercise7">
+        <p>7) He is <input type="text" id="input7"></p> smart <input type="text" id="input7"> his sister.</p>
+        <button onclick="checkAnswer('input7', 'as', 'result7')">CHECK</button><button onclick="showAnswer('answer7')">SHOW</button>
+        <span id="result7" class="result"></span>
+        <span id="answer7" class="correct-answer">[ as..as ]</span>
+    </div>
+
+    <div class="exercise" id="exercise8">
+        <p>8) I don’t earn <input type="text" id="input8"></p> much money <input type="text" id="input8"> she does.</p>
+        <button onclick="checkAnswer('input8', 'as', 'result8')">CHECK</button><button onclick="showAnswer('answer8')">SHOW</button>
+        <span id="result8" class="result"></span>
+        <span id="answer8" class="correct-answer">[ as..as ]</span>
+    </div>
+
+    <div class="exercise" id="exercise9">
+        <p>9) This winter isn’t <input type="text" id="input9"></p> cold <input type="text" id="input9"> last year’s.</p> 
+        <button onclick="checkAnswer('input9', 'as', 'result9')">CHECK</button><button onclick="showAnswer('answer9')">SHOW</button>
+        <span id="result9" class="result"></span>
+        <span id="answer9" class="correct-answer">[ as..as ]</span>
+    </div>
+
+    <div class="exercise" id="exercise10">
+        <p>10) You should try to be <input type="text" id="input10"></p> polite <input type="text" id="input10"> possible.</p>
+        <button onclick="checkAnswer('input10', 'as', 'result10')">CHECK</button><button onclick="showAnswer('answer10')">SHOW</button>
+        <span id="result10" class="result"></span>
+        <span id="answer10" class="correct-answer">[ as..as ]</span>
+    </div>
+    <br>
+
+    <script>
+        function checkAnswer(inputId, correctAnswer, resultId) {
+            const userInput = document.getElementById(inputId).value.toLowerCase();
+            const resultElement = document.getElementById(resultId);
+            if (userInput === correctAnswer) {
+                resultElement.textContent = '✔️';
+                resultElement.style.color = 'green';
+            } else {
+                resultElement.textContent = '❌';
+                resultElement.style.color = 'red';
+            }
+        }
+
+        function showAnswer(answerId) {
+            const answerElement = document.getElementById(answerId);
+            answerElement.style.display = 'inline';
+        }
+    </script>
+    </div>
+</body>
+</html>
+
+<br>
+
+<style>
+    /* Estilo del contenedor principal */
+    .content-container {
+     display: flex;
+     align-items: flex-start;
+     gap: 20px;
+     margin: 20px;
+ }
+
+ /* Estilo para el contenedor de video */
+ .video-container {
+     flex: 1;
+     display: flex;
+     justify-content: center;
+ }
+
+ /* Estilo para el contenedor de texto */
+ .text-container {
+     flex: 1;
+     text-align: left;
+     font-family: Arial, sans-serif;
+ }
+
+ /* Estilo del iframe para centrarlo */
+ .video-container iframe {
+     width: 600px; /* Aumenta el ancho */
+     height: 450px; /* Aumenta el alto */
+     border: 0;
+ }
+</style>
+
+<br>
+<br>
+
+<div class="content-container">
+<!-- Contenedor de Video -->
+<div class="video-container">
+ <iframe src="img/B2-08-As-As-Comparatives.mp4"   title="vimeo-player" allowfullscreen></iframe>
+</div>
+
+<!-- Contenedor de Texto -->
+<div class="text-container">
+<h2>Listening Exercise</h2>
+
+<h1>Conversation 1</h1>
+<p>Man: How is your new job?</p>
+<p>Woman: Okay, but it is not as fun as my last job.</p>
+<p>Man: Oh, really? Why?</p>
+<p>Woman: Well, there are not as many social events, and it is not as chill as my last job.</p>
+<p>Man: Oh, no, that's too bad. What about pay and benefits?</p>
+<p>Woman: I earn about as much as before, but I had better benefits.</p>
+<p>Man: Well, so it's not all bad.</p>
+
+<h1>Conversation 2</h1>
+<p>Man: I hear you got a new house.</p>
+<p>Woman: I did. We just moved in last week.</p>
+<p>Man: How is it?</p>
+<p>Woman: Good. It is not as big as my last place, but it is cheaper.</p>
+<p>Man: How is the neighborhood?</p>
+<p>Woman: It is not as convenient as my last place, but I like it.</p>
+
+<h1>Conversation 3</h1>
+<p>Man: Can you pick up my friend at the airport? I have to work tonight.</p>
+<p>Woman: Sure, I can do that. What does he look like?</p>
+<p>Man: Well, he's about as tall as me, and he has blonde hair. It's the same color as mine.</p>
+<p>Woman: Wow, he sounds like your twin.</p>
+<p>Man: No, I am not nearly as handsome as he is. You'll see.</p>
+<p>Woman: I'll be the judge of that.</p>
+
+<h1>Conversation 4</h1>
+<p>Man: How's the new cafe?</p>
+<p>Woman: Not good. It's not as good as the last one.</p>
+<p>Man: How are the prices?</p>
+<p>Woman: About the same, but the coffee is not as good as before.</p>
+<p>Man: Oh, no. I'm bummed to hear that.</p>
+<p>Woman: There is one good thing, though.</p>
+<p>Man: Oh, yeah. What's that?</p>
+<p>Woman: Well, because the quality has dropped off, it's not nearly as crowded as before, so it's easy to find a seat.</p>
+<p>Man: Well, at least that's good.</p>
+
+
+
+  
+</div>
+</div>
+
+<!--================================-->
+<!--PIE DE PAGINA-->
+<!--================================-->
+
+
+<footer class="w-100 d-flex align-items-center justify-content-center flex-wrap bg-dark-custom">
+    <p class="fs-5 px-3 pt-3">English-App &copy;The best way to learn English</p>
+    <div id="iconos">
+      <a href="https://www.facebook.com/eva.marquez.923724"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+      <a href="https://mail.google.com/mail/u/0/#inbox"><i class="bi bi-envelope"></i></a>
+    </div>
+  
+    <a class="nav-link" href="Index.html">BACK TO TOP</a>
+  </footer>

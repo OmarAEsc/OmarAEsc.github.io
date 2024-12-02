@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Discos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.discos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.disco {
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    width: 150px;
+}
+
+.disco img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+</style>
+<body>
+    <header>
+        <h1>Tienda de Discos</h1>
+    </header>
+
+    <main>
+        <section class="discos">
+            <div class="disco" onclick="showDetails('Disco 1')">
+                <img src="disco1.jpg" alt="Disco 1">
+                <h3>Disco 1</h3>
+                <p>Artista 1</p>
+                <p>Precio: $10</p>
+            </div>
+            <div class="disco" onclick="showDetails('Disco 2')">
+                <img src="disco2.jpg" alt="Disco 2">
+                <h3>Disco 2</h3>
+                <p>Artista 2</p>
+                <p>Precio: $12</p>
+            </div>
+            <!-- Agregar más discos aquí -->
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Tienda de Discos. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

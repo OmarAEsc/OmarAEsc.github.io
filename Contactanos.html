@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inglish-App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/paginaboostrap.css">
+    <link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css";
+    rel="stylesheet"
+integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+    crossorigin="anonymous">
+  </head>
+  
+
+  <!--================================-->
+<!--ENCABEZADO-->
+<!--================================-->
+<style>
+  .bg-dark-custom {
+      background-color: black;
+  }
+</style>
+
+<header class="container-fluid bg-dark-custom
+d-flex justify-content-center">
+
+<img src="./img/LOGOTIPO PAGINA INGLES.png" alt="Txtciber" width="550" height="300">
+</header>
+
+<div class="navbar">
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  <ul class="menu">
+    <li><a href="Index.html">English-App</a></li>
+    <li><a href="intro.html">About us</a></li>
+    
+    <li><a href="servicios.html">Exercises</a></li>
+    <li><a href="Contactanos.html">Contact us!</a></li>
+  </ul>
+</div>
+<!--================================-->
+<!--Formulario-bg-->
+<!--================================-->
+
+    <!--================================-->
+    <!--Formulario-->
+    <!--================================-->
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de reseñas y contacto</title>
+</head>
+<body>
+    <form id="reseñasForm" action="formulario.php" method="post">
+        <div class="container">
+            <h2>¿Quieres aprender más o tienes alguna duda?</h2>
+            
+            <label for="nombre">Introduce tu nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Introduce tu apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="correo">Introduce tu correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="telefono">Introduce tu número telefónico:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="localidad">Localidad:</label>
+            <input type="text" id="localidad" name="localidad" required>
+
+            <label>Certificado de interés:</label>
+            <ul>
+                <li><input type="radio" id="español" name="certificado" value="Español" required><label for="español">Quiero aprender Español</label></li>
+                <li><input type="radio" id="ingles" name="certificado" value="Inglés"><label for="ingles">Quiero aprender Inglés</label></li>
+            </ul>
+
+            <label>¿Qué te parece nuestra página interactiva de inglés?</label>
+            <ul>
+                <li><input type="radio" id="poco-util" name="valoracion" value="Poco útil" required><label for="poco-util">Poco útil</label></li>
+                <li><input type="radio" id="util" name="valoracion" value="Útil"><label for="util">Útil</label></li>
+                <li><input type="radio" id="muy-util" name="valoracion" value="Muy útil"><label for="muy-util">Muy útil</label></li>
+                <li><input type="radio" id="perfecta" name="valoracion" value="Perfecta"><label for="perfecta">Perfecta</label></li>
+            </ul>
+
+            <label for="comentarios">Comentarios extra:</label>
+            <textarea id="comentarios" name="comentarios" required></textarea>
+            
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+
+    <script>
+        document.getElementById('reseñasForm').addEventListener('submit', function(event) {
+            // Validación básica
+            var nombre = document.getElementById('nombre').value.trim();
+            var apellido = document.getElementById('apellido').value.trim();
+            var comentarios = document.getElementById('comentarios').value.trim();
+            var certificado = document.querySelector('input[name="certificado"]:checked');
+            var valoracion = document.querySelector('input[name="valoracion"]:checked');
+
+            if (!nombre || !apellido || !certificado || !valoracion || !comentarios) {
+                alert("Por favor, completa todos los campos.");
+                event.preventDefault(); 
+            }
+
+            var soloLetrasRegex = /^[A-Za-z\s]+$/; 
+
+            if (!soloLetrasRegex.test(nombre)) {
+                alert("Por favor, introduce solo letras y espacios en el campo 'Nombre'.");
+                event.preventDefault(); 
+            }
+
+            if (!soloLetrasRegex.test(apellido)) {
+                alert("Por favor, introduce solo letras y espacios en el campo 'Apellido'.");
+                event.preventDefault(); 
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+<!--================================-->
+<!--PIE DE PAGINA-->
+<!--================================-->
+
+
+<footer class="w-100 d-flex align-items-center justify-content-center flex-wrap bg-dark-custom">
+  <p class="fs-5 px-3 pt-3">English-App &copy;The best way to learn English</p>
+  <div id="iconos">
+    <a href="https://www.facebook.com/eva.marquez.923724"><i class="bi bi-facebook"></i></a>
+    <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+    <a href="https://mail.google.com/mail/u/0/#inbox"><i class="bi bi-envelope"></i></a>
+  </div>
+
+  <a class="nav-link" href="Index.html">BACK TO TOP </a>
+</footer>
+  
+  
+  
+  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+     <script src="main.js"></script>
+     <script src="https://cooltext.com/Logo-Design-Miami"></script>
+    </body>
+  </html>

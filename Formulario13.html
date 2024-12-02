@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inglish-App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/paginaboostrap.css">
+    <link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css";
+    rel="stylesheet"
+integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+    crossorigin="anonymous">
+  </head>
+  
+
+  <!--================================-->
+<!--ENCABEZADO-->
+<!--================================-->
+<style>
+  .bg-dark-custom {
+      background-color: black;
+  }
+</style>
+
+<header class="container-fluid bg-dark-custom
+d-flex justify-content-center">
+
+<img src="./img/LOGOTIPO PAGINA INGLES.png" alt="Txtciber" width="550" height="300">
+</header>
+
+<div class="navbar">
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  <ul class="menu">
+    <li><a href="Index.html">English-App</a></li>
+    <li><a href="intro.html">About us</a></li>
+    <li><a href="Ubicacion.html">location</a></li>
+    <li><a href="servicios.html">Exercises</a></li>
+    <li><a href="Contactanos.html">Contact us!</a></li>
+  </ul>
+</div>
+
+ <!--================================-->
+<!--INICIO DE PESTAÑA-->
+<!--================================-->
+<body>
+  
+    <title>Present Simple 'Be' Positive</title>
+    <style>
+
+.formulario1 {
+    width: 35%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+   
+        .exercise {
+            margin: 20px 0;
+        }
+        .exercise input {
+            width: 100px;
+            padding: 5px;
+            margin-right: 10px;
+        }
+        .exercise button {
+            padding: 5px 10px;
+            margin-right: 10px;
+        }
+        .exercise .result {
+            display: inline-block;
+            margin-left: 10px;
+            font-size: 20px;
+            color: red;
+        }
+        .exercise .correct-answer {
+            display: none;
+            color: green;
+        }
+        .exercise .show-answer {
+            color: blue;
+            cursor: pointer;
+            display: none;
+        }
+    </style>
+
+<br>
+<center>
+<h3>Superlatives are used to describe the highest degree of a quality among three or more things. 
+    They often end in "-est" (e.g., tallest, smartest) or are formed with "most" 
+    (e.g., most beautiful, most interesting).</h3>
+</center>
+<section class="container-fluid">
+    <div class="row w-75 mx-auto servicio-fila">
+
+        <div class="col-lg-6 col-md-6 col-sm-12 d-flex  my-5 icono-wrap ">
+         
+            <div>
+                <h3 class="fs-7 mt-4 px-4 pb-1">Use</h3>
+                <p class="px-4">Superlatives help us express the extreme qualities of someone or something in comparison to a larger group.
+                    </p>
+            </div>
+        </div>
+
+    <div class="colcol-lg-6 col-md-6 col-sm-12 d-flex  my-5 icono-wrap">
+
+        <div>
+            <h3 class="fs-7 mt-4 px-4 pb-1">Example:</h3>
+            <p class="px-4">John is the smartest student in the class.
+               </p>
+        </div>
+    </div>
+
+    
+</section>
+
+
+
+
+
+
+    <div class="formulario1">
+    <h2>Superlatives</h2>
+    <p>Practicing Superlatives in English</p>
+
+    <div class="exercise" id="exercise1">
+        <p>1) John is the <input type="text" id="input1"><button onclick="checkAnswer('input1', 'smartest', 'result1')">CHECK</button><button onclick="showAnswer('answer1')">SHOW</button></p>
+        <p>(smart) student in the class.</p>
+        <span id="result1" class="result"></span>
+        <span id="answer1" class="correct-answer">[ smartest ]</span>
+    </div>
+
+    <div class="exercise" id="exercise2">
+        <p>2) This is the <input type="text" id="input2"><button onclick="checkAnswer('input2', 'most beautiful', 'result2')">CHECK</button><button onclick="showAnswer('answer2')">SHOW</button></p>
+        <p>(beautiful) place I’ve ever visited.</p>
+        <span id="result2" class="result"></span>
+        <span id="answer2" class="correct-answer">[ most beautiful ]</span>
+    </div>
+
+    <div class="exercise" id="exercise3">
+        <p>3) That was the <input type="text" id="input3"><button onclick="checkAnswer('input3', 'most exciting', 'result3')">CHECK</button><button onclick="showAnswer('answer3')">SHOW</button></p>
+        <p>(exciting) game of the season.</p>
+        <span id="result3" class="result"></span>
+        <span id="answer3" class="correct-answer">[ most exciting ]</span>
+    </div>
+
+    <div class="exercise" id="exercise4">
+        <p>4) She is the  <input type="text" id="input4"><button onclick="checkAnswer('input4', 'kindest', 'result4')">CHECK</button><button onclick="showAnswer('answer4')">SHOW</button></p>
+        <p>(kind) person I know.</p>
+        <span id="result4" class="result"></span>
+        <span id="answer4" class="correct-answer">[ kindest ]</span>
+    </div>
+
+    <div class="exercise" id="exercise5">
+        <p>5) Of all the mountains, Mount Everest is the <input type="text" id="input5"><button onclick="checkAnswer('input5', 'highest', 'result5')">CHECK</button><button onclick="showAnswer('answer5')">SHOW</button></p>
+        <p>(high).</p>
+        <span id="result5" class="result"></span>
+        <span id="answer5" class="correct-answer">[ highest ]</span>
+    </div>
+
+    <div class="exercise" id="exercise6">
+        <p>6) This is the <input type="text" id="input6"><button onclick="checkAnswer('input6', 'worst', 'result6')">CHECK</button><button onclick="showAnswer('answer6')">SHOW</button></p>
+        <p>(bad) headache I’ve ever had.</p>
+        <span id="result6" class="result"></span>
+        <span id="answer6" class="correct-answer">[ worst ]</span>
+    </div>
+
+    <div class="exercise" id="exercise7">
+        <p>7) That was the <input type="text" id="input7"><button onclick="checkAnswer('input7', 'funniest', 'result7')">CHECK</button><button onclick="showAnswer('answer7')">SHOW</button></p>
+        <p>(funny) joke I’ve heard today.</p>
+        <span id="result7" class="result"></span>
+        <span id="answer7" class="correct-answer">[ funniest ]</span>
+    </div>
+
+    <div class="exercise" id="exercise8">
+        <p>8) The Sahara is the <input type="text" id="input8"><button onclick="checkAnswer('input8', 'largest', 'result8')">CHECK</button><button onclick="showAnswer('answer8')">SHOW</button></p>
+        <p>(large) desert in the world.</p>
+        <span id="result8" class="result"></span>
+        <span id="answer8" class="correct-answer">[ largest ]</span>
+    </div>
+
+    <div class="exercise" id="exercise9">
+        <p>9) Of all my friends, Sarah is the <input type="text" id="input9"><button onclick="checkAnswer('input9', 'best', 'result9')">CHECK</button><button onclick="showAnswer('answer9')">SHOW</button></p>
+        <p>(good) at math.</p>
+        <span id="result9" class="result"></span>
+        <span id="answer9" class="correct-answer">[ best ]</span>
+    </div>
+
+    <div class="exercise" id="exercise10">
+        <p>10) That is the <input type="text" id="input10"><button onclick="checkAnswer('input10', 'most expensive', 'result10')">CHECK</button><button onclick="showAnswer('answer10')">SHOW</button></p>
+        <p>(expensive) car in the showroom.</p>
+        <span id="result10" class="result"></span>
+        <span id="answer10" class="correct-answer">[ most expensive ]</span>
+    </div>
+
+    <script>
+        function checkAnswer(inputId, correctAnswer, resultId) {
+            const userInput = document.getElementById(inputId).value.toLowerCase();
+            const resultElement = document.getElementById(resultId);
+            if (userInput === correctAnswer) {
+                resultElement.textContent = '✔️';
+                resultElement.style.color = 'green';
+            } else {
+                resultElement.textContent = '❌';
+                resultElement.style.color = 'red';
+            }
+        }
+
+        function showAnswer(answerId) {
+            const answerElement = document.getElementById(answerId);
+            answerElement.style.display = 'inline';
+        }
+    </script>
+    </div>
+</body>
+</html>
+
+<br>
+
+<style>
+    /* Estilo del contenedor principal */
+    .content-container {
+     display: flex;
+     align-items: flex-start;
+     gap: 20px;
+     margin: 20px;
+ }
+
+ /* Estilo para el contenedor de video */
+ .video-container {
+     flex: 1;
+     display: flex;
+     justify-content: center;
+ }
+
+ /* Estilo para el contenedor de texto */
+ .text-container {
+     flex: 1;
+     text-align: left;
+     font-family: Arial, sans-serif;
+ }
+
+ /* Estilo del iframe para centrarlo */
+ .video-container iframe {
+     width: 600px; /* Aumenta el ancho */
+     height: 450px; /* Aumenta el alto */
+     border: 0;
+ }
+</style>
+
+<br>
+<br>
+
+<div class="content-container">
+<!-- Contenedor de Video -->
+<div class="video-container">
+ <iframe src="https://player.vimeo.com/video/578765814?h=b8dcacb816"   title="vimeo-player" allowfullscreen></iframe>
+</div>
+
+<!-- Contenedor de Texto -->
+<div class="text-container">
+<h2>Listening Exercise</h2>
+
+<h1>Conversation 1</h1>
+<p>Woman: What is the fastest way to get to the airport?</p>
+<p>Man: By taxi, but it’s the most expensive.</p>
+<p>Woman: What’s the cheapest?</p>
+<p>Man: The local bus. But, it's by far the slowest way to get there.</p>
+<p>Woman: Hmm, I'd better spring for a taxi then.</p>
+<p>Man: Yeah, it’s best if you do.</p>
+
+<h1>Conversation 2</h1>
+<p>Woman: What is the best place to visit in your country?</p>
+<p>Man: I think the west coast. It has the best weather.</p>
+<p>Woman: What about the cost?</p>
+<p>Man: The costs are very high. Our most expensive cities are there.</p>
+<p>Woman: Oh, that’s too bad. What about the food?</p>
+<p>Man: It’s great. It has the best restaurants in the country.</p>
+
+<h1>Conversation 3</h1>
+<p>Woman: How was the movie last night?</p>
+<p>Man: Oh, it was great. It was the scariest movie I’ve ever seen.</p>
+<p>Woman: Oh, really? That scary?</p>
+<p>Man: Yes, I was screaming throughout the film.</p>
+<p>Woman: Was it crowded?</p>
+<p>Man: Yeah, it was the most packed I’ve ever seen the theater.</p>
+
+<h1>Conversation 4</h1>
+<p>Woman: What is the oldest city in your country?</p>
+<p>Man: I think it is the capital.</p>
+<p>Woman: Is it the biggest?</p>
+<p>Man: It was, but not anymore.</p>
+<p>Woman: Why are people moving out?</p>
+<p>Man: Well, it’s not the most modern place to live.</p>
+
+
+
+
+    
+  
+</div>
+</div>
+
+
+
+<!--================================-->
+<!--PIE DE PAGINA-->
+<!--================================-->
+
+<footer class="w-100 d-flex align-items-center justify-content-center flex-wrap bg-dark-custom">
+    <p class="fs-5 px-3 pt-3">English-App &copy;The best way to learn English</p>
+    <div id="iconos">
+      <a href="https://www.facebook.com/eva.marquez.923724"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+      <a href="https://mail.google.com/mail/u/0/#inbox"><i class="bi bi-envelope"></i></a>
+    </div>
+  
+    <a class="nav-link" href="Index.html">BACK TO TOP </a>
+  </footer>

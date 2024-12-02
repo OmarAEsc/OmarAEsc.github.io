@@ -1,0 +1,451 @@
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* ===================MENU===================== */
+
+#menu li > a {
+    font-size:18px;
+    font-weight: bold;
+    color:#3f3f3f;
+
+}
+
+#menu form > button {
+    font-size:18px;
+    font-weight: bold;
+}
+
+.carousel-inner {
+    max-height: 39rem;
+    max-width: 100%;
+}
+
+/* ===================MEDIA QUERIES PANTALLA===================== */
+@media (max-width:768px){
+    #intro #equipo{
+        width: 90% !important;
+    }
+
+    #equipo p {
+        display: none;
+    }
+    .servicio-fila{
+        width: 100% !important;
+        text-align: center;
+    }
+    #bg-contacto {
+        top:-110px;
+    }
+}
+/* ===================MEDIA QUERIES PANTALLA EXTRA PEQUEÑA===================== */
+
+@media(max-width:576px){
+    .icono-wrap{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}
+
+.mapa{
+    background:url(../img/mapa.png);
+    width: 100%;
+    height: 500px;
+}
+
+#local{
+    background-color: white;
+    padding-bottom: 300px;
+    display:flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 50%;
+    margin-left: 100px;
+    padding-top:150px;
+}
+/* ===================MEDIA QUERIES PANTALLA ANCHA===================== */
+@media(max-width:1200px){
+    #local {
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+    .wrapper {
+        width: 90%;
+        margin:auto;
+        padding-top:50px ;
+    }
+}
+/* ===================Seccion colaboracion===================== */
+#numeros-local div{
+    padding:0 20px 0 0;
+    height: 48px;
+}
+
+#numeros-local div:not(:last-child){
+    border-right: 2px solid #3f3f3f;
+}
+
+#numeros-local div:not(:first-child){
+    padding-left: 20px;
+}
+
+#numeros.local p {
+    margin:0;
+
+}
+/* ===================Contactos background===================== */
+#bg-contacto {
+    position:relative;
+    top:-400px;
+}
+#seccion-contacto {
+    background-color: #0099ff;
+    min-height: 500px;
+    height: 100%;
+}
+/* ===================Contactos formulario===================== */
+#contenedor-formulario{
+    top:30%;
+    left:50%;
+    transform:translate(0%, -50%);
+    background-color: #fbfafa;
+    border-radius: 5px;
+    max-width: 500px;
+}
+
+#titulo-formulario{
+    color: #3f3f3f;
+}
+/* ==================Footer===================== */
+footer{
+    background: #1b2a4e;
+    min-height: 100px;
+}
+footer p{
+    color:#f3f3f3;
+    text-align: center;
+}
+#iconos i {
+    font-size: 26px;
+    padding: 0 8px;
+    color:#f3f3f3
+}
+/* ==================Galeria===================== */
+div.galeria{
+    margin:2% 2%;
+    box-shadow: 0 4px 4px 0 rgb(7 ,7 ,7), 0 6px 20px 0 rgba(255, 255, 255, 0.993);
+    float: left;
+    width: 29%;
+  
+}
+
+div.galeria img{ 
+    width:350px;
+    height:350px;
+  
+
+}
+
+div.galeria:hover{
+  
+    transform:rotate(0deg);
+}
+
+div.pie{
+    text-align: center;
+    padding:15%;
+}
+
+
+@media screen and (max-width: 1200px){
+    div.galeria{
+        margin:2% 2%;
+        box-shadow: 0 4px 4px 0 rgb(7 ,7 ,7), 0 6px 20px 0 rgba(255, 255, 255, 0.993);
+        float: left;
+        width: 45%;
+ 
+    }
+    
+    div.galeria img{ 
+        width: 350px;;
+        height: 350px;
+        left:100px;
+    }
+    
+    div.galeria:hover{
+        transform:rotate(0deg);
+    }
+    
+    div.pie{
+        text-align: center;
+        padding:15%;
+    }
+    
+}
+
+@media screen and (max-width:620px){
+
+    div.galeria{
+        margin:2% 2%;
+        box-shadow: 0 4px 4px 0 rgb(7 ,7 ,7), 0 6px 20px 0 rgba(255, 255, 255, 0.993);
+        float: left;
+        width: 100%;
+        height: 100%;
+    }
+    
+    div.galeria img{ 
+        width:80%;
+        height: 100%;
+        height:auto;
+        left:100px;
+    }
+    
+    div.galeria:hover{
+        border:1px solid blue;
+        transform:rotate(0deg);
+    }
+    
+    div.pie{
+        text-align: center;
+        padding:15%;
+    }
+
+
+}
+/* ==================NAVBAR===================== */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    z-index: 0;
+  }
+  
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+  }
+  
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    display:inline-block /* En dispositivos grandes mostrará en lista */
+  }
+  
+  .menu li a {
+    display: block;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  .menu.active {
+    display: block;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .menu {
+      display: none;
+      padding: 0;
+    }
+  
+    .menu.active {
+      display: block;
+      padding: 10px 0;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .menu li {
+      display: block; /* En dispositivos pequeños mostrará en columna */
+      margin: 0 10px; /* Espaciado entre elementos */
+    }
+  }
+
+
+/* ==================FORMULARIO 2.0===================== */
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+h2 {
+    text-align: center;
+    color: #333;
+}
+form {
+    max-width: 500px;
+    margin: auto;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+/* ==================UBICACION===================== */
+div.galeria2{
+    float: left;
+    width: 33%;
+}
+
+div.galeria2 img{ 
+    width:80%;
+    height:auto;
+    left:100px;
+}
+
+a{
+    color:#f3f3f3
+}
+
+
+
+/* ==================FORMULARIO 2 CSS===================== */
+.exercise-container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    font-family: Arial, sans-serif;
+}
+
+.exercise-container2 .exercise2 {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    border: 2px solid #ddd;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.exercise-container2 .exercise2 img {
+    width: 50px;
+    height: 50px;
+}
+
+.exercise-container2 button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.exercise-container2 button:hover {
+    background-color: #45a049;
+}
+
+.exercise-container2 #result2 {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.correct2 {
+    color: green;
+}
+
+.incorrect2 {
+    color: red;
+}
+
+
+/* ==================TEXTO DEL FORMULARIO 2 CSS===================== */
+
+.container2 {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+p {
+    margin: 10px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}

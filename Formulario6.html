@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inglish-App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/paginaboostrap.css">
+    <link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css";
+    rel="stylesheet"
+integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+    crossorigin="anonymous">
+  </head>
+  
+
+  <!--================================-->
+<!--ENCABEZADO-->
+<!--================================-->
+<style>
+  .bg-dark-custom {
+      background-color: black;
+  }
+</style>
+
+<header class="container-fluid bg-dark-custom
+d-flex justify-content-center">
+
+<img src="./img/LOGOTIPO PAGINA INGLES.png" alt="Txtciber" width="550" height="300">
+</header>
+
+<div class="navbar">
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  <ul class="menu">
+    <li><a href="Index.html">English-App</a></li>
+    <li><a href="intro.html">About us</a></li>
+    <li><a href="Ubicacion.html">location</a></li>
+    <li><a href="servicios.html">Exercises</a></li>
+    <li><a href="Contactanos.html">Contact us!</a></li>
+  </ul>
+</div>
+
+ <!--================================-->
+<!--INICIO DE PESTAÑA-->
+<!--================================-->
+<style>
+    body6 {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+    }
+    .container6 {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        max-width: 700px;
+        margin: 0 auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .title6 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .instructions6 {
+        margin-bottom: 20px;
+    }
+    .instructions6 p {
+        margin: 10px 0;
+        line-height: 1.6;
+    }
+    .exercise6 {
+        margin-bottom: 20px;
+    }
+    .exercise6 p {
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+    }
+    input[type="text"] {
+        padding: 5px;
+        width: 150px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-right: 10px;
+    }
+    .check6-btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        display: block;
+        margin: 20px auto;
+    }
+    .check6-btn:hover {
+        background-color: #4CAF50;
+    }
+    .correct6 {
+        border-color: #4CAF50;
+        color: #4CAF50;
+    }
+    .incorrect6 {
+        border-color: #f44336;
+        color: #f44336;
+    }
+    .icon6 {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+    .icon6.correct6 {
+        color: #4CAF50;
+    }
+    .icon6.incorrect6 {
+        color: #f44336;
+    }
+    .instructions6 {
+        background-color: #e6ffe6;
+        padding: 15px;
+        border-left: 5px solid #4CAF50;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+    .explanation6 h3 {
+        margin-top: 0;
+        color: #4CAF50;
+    }
+</style>
+</head>
+<body6>
+<div class="container6">
+    <center>
+    
+    <div class="instructions6">
+        <h3>Past Simple Exercise: Regular and Irregular Verbs</h3>
+
+        <p>The <strong>Past Simple</strong> tense is used to describe actions that happened at a specific time in the past. It's formed by using the past form of the verb, which for regular verbs typically ends in "-ed". However, irregular verbs have unique past forms that must be memorized.</p>
+        <p><strong>Examples:</strong></p>
+        
+            <li><strong>Regular verb:</strong> "to walk" → "walked"</li>
+            <li>I <u>walked</u> to the store yesterday.</li>
+            <li><strong>Irregular verb:</strong> "to go" → "went"</li>
+            <li>He <u>went</u> to Paris last summer.</li>
+            <li><strong>Regular verb:</strong> "to play" → "played"</li>
+            <li>We <u>played</u> soccer after school.</li>
+            <li><strong>Irregular verb:</strong> "to see" → "saw"</li>
+            <li>She <u>saw</u> a movie last night.</li>
+        
+        <p>Now, complete the following sentences by filling in the blanks with the correct past simple form of the verbs provided in brackets.</p>
+    </div>
+</center>
+    <div class="exercise6">
+        <p>1. I   <input type="text" id="q6-1" data-answer="studied"> (study) all night yesterday.<span id="icon6-1" class="icon6"></span></p>
+        <p>2. We   <input type="text" id="q6-2" data-answer="played"> (play) poker after dinner.<span id="icon6-2" class="icon6"></span></p>
+        <p>3. After escaping from prison, he   <input type="text" id="q6-3" data-answer="robbed"> (rob) a bank.<span id="icon6-3" class="icon6"></span></p>
+        <p>4. He   <input type="text" id="q6-4" data-answer="started"> (start) playing chess at the age of 7.<span id="icon6-4" class="icon6"></span></p>
+        <p>5. We   <input type="text" id="q6-5" data-answer="arrived"> (arrive) home very late.<span id="icon6-5" class="icon6"></span></p>
+        <p>6. We   <input type="text" id="q6-6" data-answer="visited"> (visit) the Louvre while we were in Paris.<span id="icon6-6" class="icon6"></span></p>
+        <p>7. He   <input type="text" id="q6-7" data-answer="tried"> (try) to escape.<span id="icon6-7" class="icon6"></span></p>
+        <p>8. I   <input type="text" id="q6-8" data-answer="stopped"> (stop) smoking when I was 30.<span id="icon6-8" class="icon6"></span></p>
+        <p>9. When I was a child, I   <input type="text" id="q6-9" data-answer="hated"> (hate) fish.<span id="icon6-9" class="icon6"></span></p>
+        <p>10. We really   <input type="text" id="q6-10" data-answer="enjoyed"> (enjoy) the concert.<span id="icon6-10" class="icon6"></span></p>
+    </div>
+    <button class="check6-btn" onclick="checkAnswers6()">Check Answers</button>
+</div>
+
+<script>
+    function checkAnswers6() {
+        for (let i = 1; i <= 10; i++) {
+            let input6 = document.getElementById('q6-' + i);
+            let userAnswer6 = input6.value.trim().toLowerCase();
+            let correctAnswer6 = input6.getAttribute('data-answer').toLowerCase();
+            let icon6 = document.getElementById('icon6-' + i);
+
+            if (userAnswer6 === correctAnswer6) {
+                input6.classList.add('correct6');
+                input6.classList.remove('incorrect6');
+                icon6.classList.add('correct6');
+                icon6.classList.remove('incorrect6');
+                icon6.innerHTML = '&#10003;'; // Palomita
+            } else {
+                input6.classList.add('incorrect6');
+                input6.classList.remove('correct6');
+                icon6.classList.add('incorrect6');
+                icon6.classList.remove('correct6');
+                icon6.innerHTML = '&#10007;'; // X
+            }
+        }
+    }
+</script>
+</body6>
+
+<br>
+
+<style>
+    /* Estilo del contenedor principal */
+    .content-container {
+     display: flex;
+     align-items: flex-start;
+     gap: 20px;
+     margin: 20px;
+ }
+
+ /* Estilo para el contenedor de video */
+ .video-container {
+     flex: 1;
+     display: flex;
+     justify-content: center;
+ }
+
+ /* Estilo para el contenedor de texto */
+ .text-container {
+     flex: 1;
+     text-align: left;
+     font-family: Arial, sans-serif;
+ }
+
+ /* Estilo del iframe para centrarlo */
+ .video-container iframe {
+     width: 600px; /* Aumenta el ancho */
+     height: 450px; /* Aumenta el alto */
+     border: 0;
+ }
+</style>
+
+<br>
+<br>
+
+<div class="content-container">
+<!-- Contenedor de Video -->
+<div class="video-container">
+ <iframe src="https://player.vimeo.com/video/251286168?h=9000fa3fdd"  title="vimeo-player" allowfullscreen></iframe>
+</div>
+
+<!-- Contenedor de Texto -->
+<div class="text-container">
+ <h2>Regular and Irregular Verbs</h2>
+ 
+ <h1>Conversation 1</h1>
+<p>Man: What did you do yesterday?</p>
+<p>Woman: Nothing much. I just stayed at home and cleaned the house.</p>
+<p>Man: How boring!</p>
+<p>Woman: Yeah, it was. And you? What did you do?</p>
+<p>Man: I drove to the mountains and went hiking.</p>
+<p>Woman: That sounds fun!</p>
+<p>Man: It was. I had a great time.</p>
+
+<h1>Conversation 2</h1>
+<p>Man: Did you do anything this weekend?</p>
+<p>Woman: I did. I took the train to the city and met my friend.</p>
+<p>Man: Oh, yeah! What did you do?</p>
+<p>Woman: We had lunch and did some shopping.</p>
+<p>Man: Did you buy anything?</p>
+<p>Woman: No, I didn’t. I just went window shopping. I’m trying to save money.</p>
+<p>Man: Me too!</p>
+
+<h1>Conversation 3</h1>
+<p>Man: How was your day?</p>
+<p>Woman: Terrible. I was so busy.</p>
+<p>Man: Oh, that’s too bad.</p>
+<p>Woman: Yeah, we were so busy at lunch. One person called in sick so we were short-staffed.</p>
+<p>Man: That’s not good. How did you manage?</p>
+<p>Woman: The boss came in and helped us.</p>
+
+<h1>Conversation 4</h1>
+<p>Man: Did you talk to Bob?</p>
+<p>Woman: I did. He said he was sorry.</p>
+<p>Man: What did he say?</p>
+<p>Woman: He said he didn’t mean to get mad at you.</p>
+<p>Man: Well, he did. He made me cry.</p>
+<p>Woman: I know. But he is really sorry about it.</p>
+  
+</div>
+</div>
+
+
+
+
+
+
+<!--================================-->
+<!--PIE DE PAGINA-->
+<!--================================-->
+
+<footer class="w-100 d-flex align-items-center justify-content-center flex-wrap bg-dark-custom">
+    <p class="fs-5 px-3 pt-3">English-App &copy;The best way to learn English</p>
+    <div id="iconos">
+      <a href="https://www.facebook.com/eva.marquez.923724"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+      <a href="https://mail.google.com/mail/u/0/#inbox"><i class="bi bi-envelope"></i></a>
+    </div>
+  
+    <a class="nav-link" href="Index.html">BACK TO TOP </a>
+  </footer>

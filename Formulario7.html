@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inglish-App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/paginaboostrap.css">
+    <link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css";
+    rel="stylesheet"
+integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+    crossorigin="anonymous">
+  </head>
+  
+
+  <!--================================-->
+<!--ENCABEZADO-->
+<!--================================-->
+<style>
+  .bg-dark-custom {
+      background-color: black;
+  }
+</style>
+
+<header class="container-fluid bg-dark-custom
+d-flex justify-content-center">
+
+<img src="./img/LOGOTIPO PAGINA INGLES.png" alt="Txtciber" width="550" height="300">
+</header>
+
+<div class="navbar">
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  <ul class="menu">
+    <li><a href="Index.html">English-App</a></li>
+    <li><a href="intro.html">About us</a></li>
+    <li><a href="Ubicacion.html">location</a></li>
+    <li><a href="servicios.html">Exercises</a></li>
+    <li><a href="Contactanos.html">Contact us!</a></li>
+  </ul>
+</div>
+
+ <!--================================-->
+<!--INICIO DE PESTAÑA-->
+<!--================================-->
+<style>
+    body7 {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        padding: 20px;
+    }
+    .container7 {
+        max-width: 600px;
+        background-color: #fff;
+        padding: 20px;
+        margin: 0 auto;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .header7 {
+        background-color: #e6f3ff;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    
+    .instructions7 {
+        margin-bottom: 20px;
+        font-size: 14px;
+        color: #333;
+    }
+    .explanation7 {
+        background-color: #e6ffe6;
+        padding: 15px;
+        border-left: 5px solid #4CAF50;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+    
+    .explanation7 p {
+        margin: 5px 0;
+        font-size: 14px;
+        color: #333;
+    }
+    .exercise7 p {
+        margin: 10px 0;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+    }
+    .exercise7 input[type="text"] {
+        padding: 5px;
+        width: 150px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-right: 10px;
+    }
+    .btn-container7 {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .btn7 {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin: 5px;
+    }
+    .btn7:hover {
+        background-color: #45a049;
+    }
+    .correct7 {
+        border-color: #4CAF50;
+        color: #4CAF50;
+    }
+    .incorrect7 {
+        border-color: #f44336;
+        color: #f44336;
+    }
+    .icon7 {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+    .icon7.correct7 {
+        color: #4CAF50;
+    }
+    .icon7.incorrect7 {
+        color: #f44336;
+    }
+</style>
+</head>
+<body7>
+<div class="container7">
+    
+    <div class="explanation7">
+        <CENTER>
+        <h3>PAST SIMPLE POSITIVE</h3>
+        <p>The Simple Past tense is used to describe actions that happened at a specific time in the past. Regular verbs form their past tense by adding <strong>"-ed"</strong> to the base form, while irregular verbs have unique past forms that must be memorized.</p>
+        <p>Here are some examples:</p>
+        
+            <li><strong>Regular verb:</strong> "to play" → "played"</li>
+            <li><strong>Regular verb:</strong> "to watch" → "watched"</li>
+            <li><strong>Irregular verb:</strong> "to go" → "went"</li>
+            <li><strong>Irregular verb:</strong> "to have" → "had"</li>
+        </ul>
+        <p>In the exercises below, fill in the blanks with the correct past tense forms of the verbs provided in brackets.</p>
+    </div>
+
+    <div class="instructions7">
+        Put the correct forms of the verbs into the gaps. Use <strong>Simple Past</strong> in the statements.
+    </div>
+</CENTER>
+
+    <div class="exercise7">
+        <p>1. They <input type="text" id="q7-1" data-answer="ordered"> something to drink. (to order)<span id="icon7-1" class="icon7"></span></p>
+        <p>2. Last summer I <input type="text" id="q7-2" data-answer="went"> to Stuttgart. (to go)<span id="icon7-2" class="icon7"></span></p>
+        <p>3. She <input type="text" id="q7-3" data-answer="did"> her homework in the afternoon. (to do)<span id="icon7-3" class="icon7"></span></p>
+        <p>4. He <input type="text" id="q7-4" data-answer="counted"> to 10. (to count)<span id="icon7-4" class="icon7"></span></p>
+        <p>5. Our cat <input type="text" id="q7-5" data-answer="caught"> a big mouse. (to catch)<span id="icon7-5" class="icon7"></span></p>
+        <p>6. In 2011 our class <input type="text" id="q7-6" data-answer="made"> a trip to Norwich. (to make)<span id="icon7-6" class="icon7"></span></p>
+        <p>7. The weather <input type="text" id="q7-7" data-answer="was"> really nice. (to be)<span id="icon7-7" class="icon7"></span></p>
+        <p>8. The secretary <input type="text" id="q7-8" data-answer="deleted"> the file yesterday. (to delete)<span id="icon7-8" class="icon7"></span></p>
+        <p>9. Paul <input type="text" id="q7-9" data-answer="said"> nothing to me. (to say)<span id="icon7-9" class="icon7"></span></p>
+        <p>10. The people <input type="text" id="q7-10" data-answer="whispered"> something to each other. (to whisper)<span id="icon7-10" class="icon7"></span></p>
+    </div>
+    
+    <div class="btn-container7">
+        <button class="btn7" onclick="checkAnswers7()">Check</button>
+        <button class="btn7" onclick="showAnswers7()">Show answer</button>
+    </div>
+</div>
+
+<script>
+    function checkAnswers7() {
+        for (let i = 1; i <= 10; i++) {
+            let input7 = document.getElementById('q7-' + i);
+            let userAnswer7 = input7.value.trim().toLowerCase();
+            let correctAnswer7 = input7.getAttribute('data-answer').toLowerCase();
+            let icon7 = document.getElementById('icon7-' + i);
+
+            if (userAnswer7 === correctAnswer7) {
+                input7.classList.add('correct7');
+                input7.classList.remove('incorrect7');
+                icon7.classList.add('correct7');
+                icon7.classList.remove('incorrect7');
+                icon7.innerHTML = '&#10003;'; // Palomita
+            } else {
+                input7.classList.add('incorrect7');
+                input7.classList.remove('correct7');
+                icon7.classList.add('incorrect7');
+                icon7.classList.remove('correct7');
+                icon7.innerHTML = '&#10007;'; // X
+            }
+        }
+    }
+
+    function showAnswers7() {
+        for (let i = 1; i <= 10; i++) {
+            let input7 = document.getElementById('q7-' + i);
+            let correctAnswer7 = input7.getAttribute('data-answer');
+            input7.value = correctAnswer7;
+            let icon7 = document.getElementById('icon7-' + i);
+            input7.classList.add('correct7');
+            input7.classList.remove('incorrect7');
+            icon7.classList.add('correct7');
+            icon7.classList.remove('incorrect7');
+            icon7.innerHTML = '&#10003;'; // Palomita
+        }
+    }
+</script>
+</body7>
+
+<br>
+
+<style>
+    /* Estilo del contenedor principal */
+    .content-container {
+     display: flex;
+     align-items: flex-start;
+     gap: 20px;
+     margin: 20px;
+ }
+
+ /* Estilo para el contenedor de video */
+ .video-container {
+     flex: 1;
+     display: flex;
+     justify-content: center;
+ }
+
+ /* Estilo para el contenedor de texto */
+ .text-container {
+     flex: 1;
+     text-align: left;
+     font-family: Arial, sans-serif;
+ }
+
+ /* Estilo del iframe para centrarlo */
+ .video-container iframe {
+     width: 600px; /* Aumenta el ancho */
+     height: 450px; /* Aumenta el alto */
+     border: 0;
+ }
+</style>
+
+<br>
+<br>
+
+<div class="content-container">
+<!-- Contenedor de Video -->
+<div class="video-container">
+ <iframe src="https://player.vimeo.com/video/950450492?h=a671b93a60"  title="vimeo-player" allowfullscreen></iframe>
+</div>
+
+<!-- Contenedor de Texto -->
+<div class="text-container">
+<h2>Listening Exercise</h2>
+
+<h1>Conversation 1</h1>
+<p>Man: So what did you do yesterday?</p>
+<p>Woman: Nothing much, just chores. I washed the dishes, vacuumed, and mopped the floors.</p>
+<p>Man: Yeah, me too.</p>
+<p>Woman: Really, are you a clean freak?</p>
+<p>Man: Not so much, but my place needed a good cleaning.</p>
+<p>Woman: Was your place pretty dirty?</p>
+<p>Man: Yeah, it was pretty bad. But I cleaned the bathroom, picked up my dirty clothes, washed them and emptied the rubbish, so now it looks respectable.</p>
+<p>Woman: Yeah, you can only put things off for so long.</p>
+<p>Man: That’s right.</p>
+
+<h1>Conversation 2</h1>
+<p>Man: What are you reading?</p>
+<p>Woman: A history book about the Mayans. I just started it though.</p>
+<p>Man: Oh cool. I just watched a documentary about them. It was fascinating.</p>
+<p>Woman: Yeah, I learned about them in college so this book piqued my interest.</p>
+<p>Man: Is it any good?</p>
+<p>Woman: So far so good. I already learned a few things I didn’t know.</p>
+<p>Man: Well, can I borrow it when you’re finished?</p>
+<p>Woman: I would, but I borrowed it from the library.</p>
+<p>Man: Ah, got it. I’ll try to check it out then.</p>
+
+<h1>Conversation 3</h1>
+<p>Man: I missed class yesterday. What did you do in class?</p>
+<p>Woman: Not much. The teacher just reviewed past lessons.</p>
+<p>Man: Oh yeah. What did she go over?</p>
+<p>Woman: She mainly talked about the essay assignment and how to write the paper.</p>
+<p>Man: Did she give any homework?</p>
+<p>Woman: Yes, but she posted it on the class website.</p>
+<p>Man: OK, I’ll check it out then. Thanks.</p>
+
+<h1>Conversation 4</h1>
+<p>Man: What did you do last night?</p>
+<p>Woman: I just stayed home and talked with my friends on Zoom.</p>
+<p>Man: Friends from work?</p>
+<p>Woman: No, friends I studied with in college.</p>
+<p>Man: Oh, that’s so cool that you are still friends.</p>
+<p>Woman: Well, we kind of lost touch with each other, but we recently reunited on Facebook.</p>
+<p>Man: I should do that with my old army buddies.</p>
+<p>Woman: You should. It’s a lot of fun. We all enjoyed seeing each other again.</p>
+
+
+    
+  
+</div>
+</div>
+
+
+
+
+
+
+
+<!--================================-->
+<!--PIE DE PAGINA-->
+<!--================================-->
+
+<footer class="w-100 d-flex align-items-center justify-content-center flex-wrap bg-dark-custom">
+    <p class="fs-5 px-3 pt-3">English-App &copy;The best way to learn English</p>
+    <div id="iconos">
+      <a href="https://www.facebook.com/eva.marquez.923724"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+      <a href="https://mail.google.com/mail/u/0/#inbox"><i class="bi bi-envelope"></i></a>
+    </div>
+  
+    <a class="nav-link" href="Index.html">BACK TO TOP </a>
+  </footer>
+
+
+
+
+
+
